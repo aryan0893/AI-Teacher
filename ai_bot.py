@@ -56,7 +56,7 @@ text_to_review = ""
 text_to_review = st.text_area("Paste your Python code here:", height=200)
 
 if st.button("Answer"):
-    with st.spinner("Generating..."):
+    with st.spinner("Searching..."):
         answer = generate(text_to_review)
         st.subheader("✅ Your answer")
         st.write(answer)
